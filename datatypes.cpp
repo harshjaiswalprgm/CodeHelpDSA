@@ -21,7 +21,7 @@ int main()
     int siz = sizeof(b);
     int si = sizeof(bl);
     int s = sizeof(f);
-    int z = sizeof(dl);
+    int t = sizeof(dl);
 
     cout << "size of a is :" << size << endl;
 
@@ -31,7 +31,7 @@ int main()
 
     cout << "size of f is :" << s << endl;
 
-    cout << "size of d is :" << z << endl;
+    cout << "size of b is :" << t << endl;
 
     return 0;
 }
