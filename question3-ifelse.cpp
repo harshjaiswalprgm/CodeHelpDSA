@@ -2,16 +2,19 @@
 using namespace std;
 int main()
 {
-    int a=24;
-    if(a>20){
-        cout<<"LOve";
+    int a = 24;
+    if (a > 20)
+    {
+        cout << "Love";
     }
-    else if(a==24){
-        cout<<"Lovely";
-
+    else if (a == 24)
+    {
+        cout << "Lovely";
     }
-    else{
-        cout<<"Harsh";
+    else
+    {
+        cout << "Harsh";
     }
+    cout<<a;
     return 0;
 }
