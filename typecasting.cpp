@@ -15,11 +15,20 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main()  //printing the value of ascii table **int to char**
+// {
+//     char bh = 123456;  
+//     cout << bh << endl;
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int main()  //printing the value of ascii table **int to char**
 {
-    char bh = 123456;  
-    cout << bh << endl;
+    unsigned int bh1 = -125;  
+    cout << bh1 << endl;
     return 0;
 }
