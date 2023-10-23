@@ -12,11 +12,10 @@ int main()
         int j = 1;
         while (j <= n)
         {
-            cout << j;
+            cout << j; // cout<<n-j+1; to print the reverce
             j = j + 1;
-           
         }
-         cout<<endl;
+        cout << endl;
         i = i + 1;
     }
 
