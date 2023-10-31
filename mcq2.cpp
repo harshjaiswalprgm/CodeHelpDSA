@@ -6,7 +6,7 @@ int main()
     int b = 2;
     if (a-- > 0 && ++b > 2)
     {
-        cout << "Stage1 - Inside If ";
+        cout << "Stage1 - Inside If "<<endl;
     }
     else
     {
