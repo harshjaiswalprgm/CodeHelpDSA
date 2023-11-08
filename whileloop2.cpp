@@ -12,7 +12,7 @@ int main()
         sum = sum + i;
         i = i + 1;
     }
-    cout << "value of sum is :" << sum << endl;
+    cout << "value of sum is :" << sum << endl; //for n entered number sum is**
 
     return 0;
 }

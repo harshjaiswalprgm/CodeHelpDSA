@@ -7,13 +7,15 @@ int main()
     int i = 2;
     cin >> n;
     while (i < n)
-    {
+    { // divide hojayegaa to not prime**
         if (n % i == 0)
         {
-            //cout << "not prime :" << endl;
-            cout<<"not prime for "<<i<<endl;
-        }else{
-            cout<<"prime for "<<i<<endl;
+            // cout << "not prime :" << endl;
+            cout << "not prime for " << i << endl;
+        }
+        else
+        {
+            cout << "prime for " << i << endl;
         }
         i = i + 1;
     }
