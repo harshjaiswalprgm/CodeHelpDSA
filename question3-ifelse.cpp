@@ -16,5 +16,17 @@ int main()
         cout << "Harsh";
     }
     cout<<a;
+
+
+// int a, b =1;
+// a=10;
+// if(++a){
+//     cout<<b;
+// }else{
+//     cout<<++b;
+// }
+
+
+
     return 0;
 }
