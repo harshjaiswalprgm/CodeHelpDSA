@@ -4,5 +4,8 @@
         "xstring": "cpp",
         "ostream": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true
 }
