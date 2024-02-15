@@ -33,5 +33,8 @@ int main()
 
     cout << "size of b is :" << t << endl;
 
+    unsigned int x = -112;
+    cout<<x;
+
     return 0;
 }
