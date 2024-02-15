@@ -21,7 +21,7 @@ int main()
 
     int i = 6;
     ///out << i++;
-    cout<<++i;
+    cout<<++i;  //pre-increnment
 
     return 0;
 }
