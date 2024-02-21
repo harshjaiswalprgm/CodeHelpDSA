@@ -13,6 +13,21 @@ public:
     }
 };
 
+void insertAtTail(Node *&tail, int d)
+{
+    Node *temp = new Node(d);
+    tail->next = temp;
+    tail = tail->next;
+}
+void display(Node *&head)
+{
+    Node *temp = head;
+    while (temp != NULL)
+    {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+}
 int main()
 {
     Node *node1 = new Node(10);
