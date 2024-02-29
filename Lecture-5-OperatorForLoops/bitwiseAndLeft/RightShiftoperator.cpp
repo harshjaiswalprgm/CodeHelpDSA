@@ -11,8 +11,8 @@ int main()
     cout << "a^b is: " << (a ^ b) << endl;   //xor
 
 //////////////////////////////////////////////
-
-
+cout<<"Right shift and Left shift operator"<<endl;
+//Right shift and left shift
 cout<<(17>>1)<<endl;
 cout<<(17>>2)<<endl;
 cout<<(19<<1)<<endl;
