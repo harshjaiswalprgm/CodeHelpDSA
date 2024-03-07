@@ -40,6 +40,12 @@ void insertAtposition(Node *&head, int position, int data)
         temp = temp->next;
         cnt++;
     }
+
+    // updating temp when inserting node at last
+    if(temp->next==NULL){
+        insertAtTail(tail, data);
+        return; 
+    }
     // creating node for data--
     Node *nodeToInsert = new Node(data);
     nodeToInsert->next = temp->next;
@@ -62,7 +68,7 @@ int main()
     insertAtTail(tail, 30);
     display(head);
     cout << endl;
-    insertAtposition(head, 1, 55);
+    insertAtposition(head, 4, 55);
     display(head);
     return 0;
 }
