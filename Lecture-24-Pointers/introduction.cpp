@@ -25,7 +25,6 @@ int main () {
     cout << " size of integer is " << sizeof(num) << endl;
     cout << " size of pointer is " << sizeof(ptr) << endl;
     cout << " size of pointer is " << sizeof(p2) << endl;
-    cout << " size of pointer is " << sizeof(p2) << endl;
 
 
 
