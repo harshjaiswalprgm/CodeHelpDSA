@@ -42,9 +42,10 @@ void insertAtposition(Node *&head, int position, int data)
     }
 
     // updating temp when inserting node at last
-    if(temp->next==NULL){
-        insertAtTail(tail, data);
-        return; 
+    if (temp->next == NULL)
+    {
+        insertAtTail(head, data);
+        return;
     }
     // creating node for data--
     Node *nodeToInsert = new Node(data);
