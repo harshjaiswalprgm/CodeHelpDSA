@@ -37,6 +37,7 @@ int main() {
     }   
 
     delete []arr;
+    cout<<endl;
 
     //how to create a 2D array dynamically
     //input/Output
