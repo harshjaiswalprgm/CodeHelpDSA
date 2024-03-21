@@ -10,7 +10,7 @@ int main() {
 
     double area = PI * r * r;
 
-    cout << "Area is: " << area << endl;
+    cout << "Area is " << area << endl;
 
     return 0;
 }
