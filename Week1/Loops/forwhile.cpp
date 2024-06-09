@@ -7,10 +7,18 @@ int main()
     //     cout<<" "<<i<<endl;
     // }
 
-     int i = 0;
-    for (int i = 0; i>=-10;  i--){  //print 0 to -10
-        cout<<" "<<i<<endl;
+    //  int i = 0;
+    // for (int i = 0; i>=-10;  i--){  //print 0 to -10
+    //     cout<<" "<<i<<endl;
+    // }
+
+
+       
+    for (char ch = 'A'; ch<='Z';  ch++){  //print 0 to -10
+        cout<<" "<<ch<<endl;
     }
+
+
 
 
     // while(i>= -10){
