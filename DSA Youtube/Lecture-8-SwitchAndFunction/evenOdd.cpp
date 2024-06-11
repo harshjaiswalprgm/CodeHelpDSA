@@ -1,9 +1,8 @@
 #include<iostream>
 using namespace std;
 
-
-//1 -> Even
-// 0 -> odd
+// 1 -> Even  0001 + 1 = 1 means true;
+//  0 -> odd  otherwise false;
 bool isEven(int a) {
     //odd
     if(a&1) {
