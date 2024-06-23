@@ -4,7 +4,7 @@ bool isPrime(int number)
 {
     for (int i = 2; i <= (number - 1); i++)
     {
-        if (number % 2 == 0)
+        if (number % i == 0)
         {
             return false;
         }
@@ -14,7 +14,7 @@ bool isPrime(int number)
 }
 int main()
 {
-    bool ans = isPrime(12);
+    bool ans = isPrime(111);
     if (ans == true)
     {
         cout << "NoisPrime" << endl;
