@@ -27,3 +27,5 @@ int main()
     cout << ans << endl;
     return 0;
 }
+
+//target function is pending
