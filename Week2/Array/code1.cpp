@@ -118,7 +118,7 @@ void transposeMatrix(int arr[][3], int rowSize, int colSize) {
         for(int j=0; j<colSize; j++) {
             cout << arr[i][j] << " ";
         }
-        cout << endl;
+        cout <<  endl;
     }
 
 
@@ -143,7 +143,7 @@ void transposeMatrix(int arr[][3], int rowSize, int colSize) {
 
 int main() {
 
-    int arr[3][3] = {
+    int arr[3][3] ={
                     {10,11,12},
                     {20,21,22},
                     {30,31,32}
@@ -169,8 +169,6 @@ int main() {
 
     // int ans = findMinimumIn2DArray(arr,rowSize,colSize);
     // cout << ans << endl;
-
-
 
 
     //int target = 404;
