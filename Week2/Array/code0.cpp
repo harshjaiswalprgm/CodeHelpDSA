@@ -2,136 +2,136 @@
 #include<algorithm>
 using namespace std;
 
-int findUniqueNumber(int arr[] , int n) {
-    int ans = 0 ;
+// int findUniqueNumber(int arr[] , int n) {
+//     int ans = 0 ;
 
-    //to find the final answer, we need to XOR all the numbers in the array
-    for(int i=0; i<n; i++) {
-        ans = ans ^ arr[i];
-    }
+//     //to find the final answer, we need to XOR all the numbers in the array
+//     for(int i=0; i<n; i++) {
+//         ans = ans ^ arr[i];
+//     }
 
-    return ans;
+//     return ans;
 
-}
+// }
 
-void sortZeroOne(int arr[], int n) {
-    int zeroCount = 0;
-    int oneCount = 0;
-    //counting
-    for(int i=0; i<n; i++) {
-        if(arr[i] == 0) {
-            zeroCount++;
-        }
-        if(arr[i] == 1) {
-            oneCount++;
-        }
-    }
-    //insertion
-    fill(arr, arr+zeroCount, 0);
-    fill(arr+zeroCount, arr+n, 1);
+// void sortZeroOne(int arr[], int n) {
+//     int zeroCount = 0;
+//     int oneCount = 0;
+//     //counting
+//     for(int i=0; i<n; i++) {
+//         if(arr[i] == 0) {
+//             zeroCount++;
+//         }
+//         if(arr[i] == 1) {
+//             oneCount++;
+//         }
+//     }
+//     //insertion
+//     fill(arr, arr+zeroCount, 0);
+//     fill(arr+zeroCount, arr+n, 1);
     
-    // for(int i=0;i<zeroCount; i++) {
-    //     arr[i] = 0;
-    // }
-    // for(int i=zeroCount; i<n; i++) {
-    //     arr[i] = 1;
-    // }
-}
+//     // for(int i=0;i<zeroCount; i++) {
+//     //     arr[i] = 0;
+//     // }
+//     // for(int i=zeroCount; i<n; i++) {
+//     //     arr[i] = 1;
+//     // }
+// }
 
-void printAllPairs(int arr[], int n) {
-    for(int i=0; i<n; i++) {
-        //for every i, we are running looping variable "j" from start to end
-        for(int j=0; j<n; j++){
-            cout << arr[i] <<", " << arr[j] << endl;
-        }
-    }
-}
+// void printAllPairs(int arr[], int n) {
+//     for(int i=0; i<n; i++) {
+//         //for every i, we are running looping variable "j" from start to end
+//         for(int j=0; j<n; j++){
+//             cout << arr[i] <<", " << arr[j] << endl;
+//         }
+//     }
+// }
 
-pair<int,int> checkTwoSum(int arr[], int n, int target) {
-    //assuming (-1,-1) as no answer found
-    pair<int,int> ans = make_pair(-1,-1);
-    //check all pairs
-    for(int i=0; i<n; i++) {
-        for(int j=0; j<n; j++) {
-            if(arr[i] + arr[j] == target) {
-                //found a pair that sums to target
-                ans.first = arr[i];
-                ans.second = arr[j];
-                return ans;
-            }
-        }
-    }
-    //agar aap yha tak pohoch gye
-    //iska matlab, koi bhi pair target k equal nahi mila
-    //iska matlab return false karo
-    return ans;
-}
+// pair<int,int> checkTwoSum(int arr[], int n, int target) {
+//     //assuming (-1,-1) as no answer found
+//     pair<int,int> ans = make_pair(-1,-1);
+//     //check all pairs
+//     for(int i=0; i<n; i++) {
+//         for(int j=0; j<n; j++) {
+//             if(arr[i] + arr[j] == target) {
+//                 //found a pair that sums to target
+//                 ans.first = arr[i];
+//                 ans.second = arr[j];
+//                 return ans;
+//             }
+//         }
+//     }
+//     //agar aap yha tak pohoch gye
+//     //iska matlab, koi bhi pair target k equal nahi mila
+//     //iska matlab return false karo
+//     return ans;
+// }
 
-void checkTwoSumUsingArray(int arr[], int n, int target, int ans[]) {
-    //assuming (-1,-1) as no answer found
-    //pair<int,int> ans = make_pair(-1,-1);
-    //check all pairs
-    for(int i=0; i<n; i++) {
-        for(int j=0; j<n; j++) {
-            if(arr[i] + arr[j] == target) {
-                //found a pair that sums to target
-                ans[0] = arr[i];
-                ans[1] = arr[j];
-                return ;
-            }
-        }
-    }
-    //agar aap yha tak pohoch gye
-    //iska matlab, koi bhi pair target k equal nahi mila
-    //iska matlab return false karo
-    return ;
-}
+// void checkTwoSumUsingArray(int arr[], int n, int target, int ans[]) {
+//     //assuming (-1,-1) as no answer found
+//     //pair<int,int> ans = make_pair(-1,-1);
+//     //check all pairs
+//     for(int i=0; i<n; i++) {
+//         for(int j=0; j<n; j++) {
+//             if(arr[i] + arr[j] == target) {
+//                 //found a pair that sums to target
+//                 ans[0] = arr[i];
+//                 ans[1] = arr[j];
+//                 return ;
+//             }
+//         }
+//     }
+//     //agar aap yha tak pohoch gye
+//     //iska matlab, koi bhi pair target k equal nahi mila
+//     //iska matlab return false karo
+//     return ;
+// }
 
-void checkTwoSumPrintAllAnswers(int arr[], int n, int target) {
-    //assuming (-1,-1) as no answer found
-    //pair<int,int> ans = make_pair(-1,-1);
-    //check all pairs
-    for(int i=0; i<n; i++) {
-        for(int j=0; j<n; j++) {
-            if(arr[i] + arr[j] == target) {
-                //found a pair that sums to target
-                cout << arr[i] << ", " << arr[j] << endl;
-            }
-        }
-    }
-    //agar aap yha tak pohoch gye
-    //iska matlab, koi bhi pair target k equal nahi mila
-    //iska matlab return false karo
-    return ;
-}
+// void checkTwoSumPrintAllAnswers(int arr[], int n, int target) {
+//     //assuming (-1,-1) as no answer found
+//     //pair<int,int> ans = make_pair(-1,-1);
+//     //check all pairs
+//     for(int i=0; i<n; i++) {
+//         for(int j=0; j<n; j++) {
+//             if(arr[i] + arr[j] == target) {
+//                 //found a pair that sums to target
+//                 cout << arr[i] << ", " << arr[j] << endl;
+//             }
+//         }
+//     }
+//     //agar aap yha tak pohoch gye
+//     //iska matlab, koi bhi pair target k equal nahi mila
+//     //iska matlab return false karo
+//     return ;
+// }
 
-void printAllTriplets(int arr[], int n) {
-    int count = 0;
-    //TC- > n^3
-    //SC -> O(1) space
-    for(int i=0; i<n; i++) {
-        for(int j=0; j<n; j++) {
-            for(int k=0; k<n; k++) {
-                cout << arr[i] << ", " << arr[j] << ", " << arr[k] << endl;
-                count++;
-            }
-        }
-    }
-    cout << "Total triplets printed: " << count << endl;
-}
+// void printAllTriplets(int arr[], int n) {
+//     int count = 0;
+//     //TC- > n^3
+//     //SC -> O(1) space
+//     for(int i=0; i<n; i++) {
+//         for(int j=0; j<n; j++) {
+//             for(int k=0; k<n; k++) {
+//                 cout << arr[i] << ", " << arr[j] << ", " << arr[k] << endl;
+//                 count++;
+//             }
+//         }
+//     }
+//     cout << "Total triplets printed: " << count << endl;
+// }
 
-void checkThreeSum(int arr[], int n, int target) {
-    for(int i=0; i<n; i++) {
-        for(int j=i+1; j<n; j++) {
-            for(int k=j+1; k<n; k++) {
-                if(arr[i] + arr[j] + arr[k] == target) {
-                    //ans found
-                    cout << arr[i] << ", " << arr[j] <<", " << arr[k] << endl;
-                }
-            }
-        }
-    }
-}
+// void checkThreeSum(int arr[], int n, int target) {
+//     for(int i=0; i<n; i++) {
+//         for(int j=i+1; j<n; j++) {
+//             for(int k=j+1; k<n; k++) {
+//                 if(arr[i] + arr[j] + arr[k] == target) {
+//                     //ans found
+//                     cout << arr[i] << ", " << arr[j] <<", " << arr[k] << endl;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 void rotateArray(int arr[], int size, int n) {
     //size -> size of array
@@ -171,7 +171,7 @@ void rotateArray(int arr[], int size, int n) {
 }
 
 int main() {
-    int arr[] = {10,20,30,40,50,60};
+    int arr[] = {100,20,30,40,50,60};
     int size = 6;
     //cyclically rotate array bu 2 places
     int n = 0;
