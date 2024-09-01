@@ -4,19 +4,22 @@
 
 using namespace std;
 
-void print(vector<int> &v) {
-  for (int i = 0; i < v.size(); ++i) {
+void print(vector<int> &v)
+{
+  for (int i = 0; i < v.size(); ++i)
+  {
     cout << v[i] << " ";
   }
   cout << endl;
 }
 
-
 //<<<============================================================================>>>
-//Question is to short the vector of vector by their first index, ===> example [[0, 22]] ==>> so 22 is my first index.
+// Question is to short the vector of vector by their first index, ===> example [[0, 22]] ==>> so 22 is my first index.
 
-void printvv(vector<vector<int>> &v) {
-  for (int i = 0; i < v.size(); ++i) {
+void printvv(vector<vector<int>> &v)
+{
+  for (int i = 0; i < v.size(); ++i)
+  {
     vector<int> &temp = v[i];
     int a = temp[0];
     int b = temp[1];
@@ -30,23 +33,26 @@ void printvv(vector<vector<int>> &v) {
 //   return a > b; // decreasing order sorting
 // }
 
-bool mycompfor1stIndex(vector<int> &a, vector<int> &b) {
+bool mycompfor1stIndex(vector<int> &a, vector<int> &b)
+{
   return a[1] > b[1]; // dsc order
   // return a[1] < b[1]; // asc order
 }
 
-int main() {
+int main()
+{
   // vector<int> v = {44, 55, 22, 11, 33};
   // sort(v.begin(), v.end()); // increasing order sorting
   // sort(v.begin(), v.end(), mycomp);
   // print(v);
 
-  // vector of vector sorting
+  // vector of vector sorting This is a question for 1st index sorting
   vector<vector<int>> v;
   int n;
   cout << "Enter size:\n";
   cin >> n;
-  for (int i = 0; i < n; ++i) {
+  for (int i = 0; i < n; ++i)
+  {
     int a, b;
     cout << "enter a, b" << endl;
     cin >> a >> b;
@@ -60,6 +66,8 @@ int main() {
   printvv(v);
   cout << "Sorted by 1st index" << endl;
   sort(v.begin(), v.end(), mycompfor1stIndex);
+  // before using mycompfor1stIndex it is sorting based upon 0th index
+  //thats why we use mycompfor1stIndex to sort accordingly 
   printvv(v);
   return 0;
 }
