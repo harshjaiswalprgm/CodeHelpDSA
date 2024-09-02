@@ -1,4 +1,3 @@
-write a code for avl tree structure
 
 #include<stdio.h>
 

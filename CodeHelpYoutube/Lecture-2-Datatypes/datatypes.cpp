@@ -4,6 +4,7 @@ int main()
 {
     int a = 123;
     cout << a << endl;
+    cout<< "a = 123" << end
 
     char b = 'h';
     cout << b << endl;
