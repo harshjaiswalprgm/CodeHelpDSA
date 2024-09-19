@@ -79,7 +79,7 @@ void reverseCharArray(char arr[], int n) {
         i++;
         j--;
     }
-}
+} 
 
 bool checkPalindrome(char arr[], int n) {
     int len = getLength(arr,n);
