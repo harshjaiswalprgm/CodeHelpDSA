@@ -274,3 +274,13 @@ int main() {
 
     return 0;
 }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     int i = 1;
+//     int z= ++i + i++;
+//     cout << z << endl;
+// }
